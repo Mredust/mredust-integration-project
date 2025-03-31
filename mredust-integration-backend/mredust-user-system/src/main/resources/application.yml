@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: mredust-user-service
+  profiles:
+    active: dev
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mredust-integration-project?useSSL=false&serverTimezone=UTC
+    username: root
+    password: motianze4
+
+server:
+  port: 4090
+
+mybatis-plus:
+  type-aliases-package: com.mredust.mredustuserservice.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
