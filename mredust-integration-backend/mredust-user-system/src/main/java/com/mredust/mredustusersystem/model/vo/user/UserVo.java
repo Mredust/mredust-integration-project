@@ -50,7 +50,10 @@ public class UserVo implements Serializable {
      * 更新时间
      */
     private Date updateTime;
-    
+    /**
+     * 用户头像
+     */
+    private String avatarUrl;
     /**
      * 是否删除（0-否 1-是）
      */

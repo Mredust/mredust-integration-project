@@ -123,6 +123,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         }
         User user = new User();
         BeanUtil.copyProperties(userAddRequest, user);
+        user.setAvatarUrl(DEFAULT_AVATAR);
         boolean result = this.save(user);
         if (!result) {
             throw new BusinessException(ResponseCode.SYSTEM_ERROR, "添加用户失败");

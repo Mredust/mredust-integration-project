@@ -1,4 +1,4 @@
-import {Footer} from '@/components';
+import {Footer} from '@/layout';
 import {LockOutlined, UserOutlined,} from '@ant-design/icons';
 import {LoginForm, ProFormText,} from '@ant-design/pro-components';
 import {Helmet, history} from '@umijs/max';

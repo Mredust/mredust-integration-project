@@ -19,7 +19,10 @@ public class UserUpdateMyRequest implements Serializable {
      * 用户昵称
      */
     private String username;
-    
+    /**
+     * 用户头像
+     */
+    private String avatarUrl;
     /**
      * 性别（0-女 1-男 2-未知）
      */

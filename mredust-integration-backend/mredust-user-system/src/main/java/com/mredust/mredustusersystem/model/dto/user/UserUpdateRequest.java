@@ -33,7 +33,10 @@ public class UserUpdateRequest implements Serializable {
      * 性别（0-女 1-男 2-未知）
      */
     private Integer sex;
-    
+    /**
+     * 用户头像
+     */
+    private String avatarUrl;
     
     /**
      * 用户角色（0-普通用户 1-管理员）

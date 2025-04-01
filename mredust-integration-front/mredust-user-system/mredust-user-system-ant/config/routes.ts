@@ -8,8 +8,9 @@
                 name: '注册',
                 path: '/user/register',
                 component: './User/Register'
-            },],
+            }]
     },
+    {path: '/', redirect: '/welcome'},
     {path: '/welcome', name: '欢迎', icon: 'smile', component: './Welcome'},
     {
         path: '/admin',
@@ -22,6 +23,5 @@
         ],
     },
     {name: '查询表格', icon: 'table', path: '/list', component: './TableList'},
-    {path: '/', redirect: '/welcome'},
     {path: '*', layout: false, component: './404'},
 ];
