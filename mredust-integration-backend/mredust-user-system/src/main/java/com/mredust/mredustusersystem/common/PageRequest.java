@@ -26,4 +26,8 @@ public class PageRequest implements Serializable {
      */
     private String sortField = "create_time";
     
+    /**
+     * 排序方式
+     */
+    private String sortOrder = "desc";
 }

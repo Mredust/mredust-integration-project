@@ -1,8 +1,9 @@
 package com.mredust.mredustusersystem.model.vo.user;
 
-import cn.hutool.core.bean.BeanUtil;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.mredust.mredustusersystem.model.entity.User;
 import lombok.Data;
+import org.springframework.beans.BeanUtils;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -55,13 +56,14 @@ public class UserVo implements Serializable {
      */
     private Integer isDelete;
     
-    public UserVo getUserVo(User user) {
-        if (user == null) {
-            return null;
+    public UserVo(User user) {
+        if (user != null) {
+            BeanUtils.copyProperties(user, this);
         }
-        UserVo userVo = new UserVo();
-        BeanUtil.copyProperties(user, userVo);
-        
-        return userVo;
+    }
+    
+    @JsonIgnore
+    public UserVo getUserVo() {
+        return this;
     }
 }
