@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00df0193-b29e-400a-8628-26bb1ac00326" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/common/BaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/common/DeleteRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/common/PageRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/common/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/constant/UserConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/dto/user/UserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/vo/user/UserVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/test/java/com/mredust/mredustusersystem/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/test/java/com/mredust/mredustusersystem/MredustUserSystemApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/test/java/com/mredust/mredustusersystem/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/test/java/com/mredust/mredustusersystem/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +83,7 @@
       <recent name="com.mredust.mredustusersystem.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.testUserLogin">
+  <component name="RunManager" selected="JUnit.UserTest.testUserRegister">
     <configuration name="UserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mredust.mredustusersystem.UserTest" />
       <module name="mredust-user-system" />
@@ -119,6 +102,22 @@
       <option name="PACKAGE_NAME" value="com.mredust.mredustusersystem" />
       <option name="MAIN_CLASS_NAME" value="com.mredust.mredustusersystem.UserTest" />
       <option name="METHOD_NAME" value="testUserLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.testUserRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mredust-user-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mredust.mredustusersystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mredust.mredustusersystem" />
+      <option name="MAIN_CLASS_NAME" value="com.mredust.mredustusersystem.UserTest" />
+      <option name="METHOD_NAME" value="testUserRegister" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,8 +149,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.testUserLogin" />
+        <item itemvalue="JUnit.UserTest.testUserRegister" />
         <item itemvalue="应用程序.UserTest" />
+        <item itemvalue="JUnit.UserTest.testUserLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +163,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743409520142</updated>
-      <workItem from="1743409521196" duration="11241000" />
+      <workItem from="1743409521196" duration="14120000" />
     </task>
     <servers />
   </component>

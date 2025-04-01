@@ -4,16 +4,15 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.baomidou.mybatisplus.extension.toolkit.Db;
 import com.mredust.mredustusersystem.common.ResponseCode;
 import com.mredust.mredustusersystem.exception.BusinessException;
+import com.mredust.mredustusersystem.mapper.UserMapper;
 import com.mredust.mredustusersystem.model.entity.User;
 import com.mredust.mredustusersystem.model.vo.user.UserVo;
 import com.mredust.mredustusersystem.service.UserService;
-import com.mredust.mredustusersystem.mapper.UserMapper;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
-import javax.annotation.Resource;
 import java.util.regex.Pattern;
 
 import static com.mredust.mredustusersystem.constant.UserConstant.*;
@@ -55,7 +54,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             User user = new User();
             user.setAccount(account);
             user.setPassword(encryptPassword);
-            user.setUsername("用户" + account);
+            user.setUsername("用户" + account.substring(4));
             boolean saveResult = this.save(user);
             if (!saveResult) {
                 throw new BusinessException(ResponseCode.SYSTEM_ERROR, "注册失败");
