@@ -23,5 +23,5 @@
         ],
     },
     {name: '用户管理', icon: 'user', path: '/admin/user-manage', component: './Admin/UserManage', access: "canAdmin"},
-    {path: '*', layout: false, component: './404'},
+    {path: '/404', layout: false, component: './404'},
 ];

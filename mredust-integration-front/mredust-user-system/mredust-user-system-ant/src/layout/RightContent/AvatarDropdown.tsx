@@ -1,6 +1,6 @@
 import {LogoutOutlined, SettingOutlined, UserOutlined} from '@ant-design/icons';
 import {history, useModel} from '@umijs/max';
-import {Spin} from 'antd';
+import {message, Spin} from 'antd';
 import {createStyles} from 'antd-style';
 import {stringify} from 'querystring';
 import type {MenuInfo} from 'rc-menu/lib/interface';
@@ -72,8 +72,9 @@ export const AvatarDropdown: React.FC<GlobalHeaderRightProps> = ({menu, children
                 });
                 loginOut();
                 return;
+            } else {
+                message.warning("功能暂未开发")
             }
-            history.push(`/account/${key}`);
         },
         [setInitialState],
     );

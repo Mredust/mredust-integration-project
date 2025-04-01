@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00df0193-b29e-400a-8628-26bb1ac00326" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/Admin/UserManage/components/CustomModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/Admin/UserManage/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/Admin/UserManage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/config/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/config/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/TableList/components/UpdateForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/TableList/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/services/user/typding.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/services/user/typding.d.ts" afterDir="false" />
-    </list>
+    <list default="true" id="00df0193-b29e-400a-8628-26bb1ac00326" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,7 +173,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743409520142</updated>
-      <workItem from="1743409521196" duration="27634000" />
+      <workItem from="1743409521196" duration="27699000" />
     </task>
     <servers />
   </component>
