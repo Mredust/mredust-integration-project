@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00df0193-b29e-400a-8628-26bb1ac00326" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/dto/user/UserUpdateMyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/dto/user/UserUpdateMyRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/dto/user/UserUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/dto/user/UserUpdateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/vo/user/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/model/vo/user/UserVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/config/defaultSettings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/config/defaultSettings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/Admin/UserManage/components/CustomModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/Admin/UserManage/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/Admin/UserManage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/config/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/config/routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/layout/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/components/HeaderDropdown/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/layout/HeaderDropdown/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/components/RightContent/AvatarDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/layout/RightContent/AvatarDropdown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/components/RightContent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/layout/RightContent/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/layout/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/User/Login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/User/Login/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/User/Register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/User/Register/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/TableList/components/UpdateForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/pages/TableList/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/services/user/typding.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/services/user/typding.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +183,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743409520142</updated>
-      <workItem from="1743409521196" duration="25775000" />
+      <workItem from="1743409521196" duration="27634000" />
     </task>
     <servers />
   </component>

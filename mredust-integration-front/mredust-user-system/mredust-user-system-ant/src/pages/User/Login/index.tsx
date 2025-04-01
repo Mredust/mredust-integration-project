@@ -30,8 +30,7 @@ const Login: React.FC = () => {
                 message.success("登录成功");
                 localStorage.setItem("userInfo", JSON.stringify(res.data));
                 await fetchUserInfo();
-                const urlParams = new URL(window.location.href).searchParams;
-                history.push(urlParams.get('redirect') || '/');
+                history.push('/');
                 return;
             }
             console.log(res.msg);

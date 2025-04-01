@@ -4,7 +4,7 @@ declare namespace UserAPI {
         account: string;
         avatarUrl: string;
         createTime: string;
-        id: number;
+        userId: number;
         isDelete: number;
         password: string;
         role: number;
@@ -27,7 +27,7 @@ declare namespace UserAPI {
         /** 创建时间 */
         createTime: string;
         /** 主键 */
-        id: number;
+        userId: number;
         /** 角色（0-普通用户 1-管理员） */
         role: number;
         /** 性别（0-女 1-男 2-未知） */
@@ -60,8 +60,8 @@ declare namespace UserAPI {
         account: string;
         /** 用户头像 */
         avatarUrl: string;
-        /** 用户id */
-        id: number;
+        /** 用户userId */
+        userId: number;
         /** 是否删除 */
         isDelete: number;
         /** 密码 */
@@ -90,8 +90,8 @@ declare namespace UserAPI {
         account: string;
         /** 用户头像 */
         avatarUrl: string;
-        /** 用户id */
-        id: number;
+        /** 用户userId */
+        userId: number;
         /** 当前页码 */
         pageNum: number;
         /** 页面大小 */

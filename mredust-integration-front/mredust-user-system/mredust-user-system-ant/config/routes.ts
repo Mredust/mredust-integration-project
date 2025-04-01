@@ -22,6 +22,6 @@
             {path: '/admin/sub-page', name: '二级管理页', component: './Admin'},
         ],
     },
-    {name: '查询表格', icon: 'table', path: '/list', component: './TableList'},
+    {name: '用户管理', icon: 'user', path: '/admin/user-manage', component: './Admin/UserManage', access: "canAdmin"},
     {path: '*', layout: false, component: './404'},
 ];

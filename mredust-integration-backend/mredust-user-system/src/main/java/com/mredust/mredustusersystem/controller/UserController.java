@@ -116,7 +116,7 @@ public class UserController {
     
     @DeleteMapping("/delete")
     public BaseResponse<Boolean> deleteUser(@RequestBody DeleteRequest deleteRequest) {
-        if (deleteRequest == null || deleteRequest.getId() <= 0) {
+        if (deleteRequest == null || deleteRequest.getId() == null || deleteRequest.getId() <= 0) {
             throw new BusinessException(ResponseCode.PARAMS_NULL);
         }
         Long id = deleteRequest.getId();
@@ -141,6 +141,7 @@ public class UserController {
         }
         User user = new User();
         BeanUtils.copyProperties(userUpdateRequest, user);
+        user.setUserId(userUpdateRequest.getId());
         boolean updateResult = userService.updateById(user);
         return updateResult ? Result.success("更新成功") : Result.fail("更新失败");
     }

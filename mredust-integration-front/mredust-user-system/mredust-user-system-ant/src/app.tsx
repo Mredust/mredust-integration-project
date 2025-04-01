@@ -1,14 +1,11 @@
 import {AvatarDropdown, AvatarName, Footer, Question} from '@/layout';
-import {LinkOutlined} from '@ant-design/icons';
 import type {Settings as LayoutSettings} from '@ant-design/pro-components';
-import {SettingDrawer} from '@ant-design/pro-components';
 import type {RunTimeLayoutConfig} from '@umijs/max';
-import {history, Link} from '@umijs/max';
+import {history} from '@umijs/max';
 import defaultSettings from '../config/defaultSettings';
 import {requestConfig} from "@/requestConfig";
 import {getLoginUserAPI} from "@/services/user/api";
 
-const isDev = process.env.NODE_ENV === 'development';
 const loginPath = '/user/login';
 
 /**
@@ -56,11 +53,8 @@ export const layout: RunTimeLayoutConfig = ({initialState, setInitialState}) => 
             src: initialState?.currentUser?.avatarUrl,
             title: <AvatarName/>,
             render: (_, avatarChildren) => {
-                return <AvatarDropdown>{avatarChildren}</AvatarDropdown>;
+                return <AvatarDropdown menu={true}>{avatarChildren}</AvatarDropdown>;
             },
-        },
-        waterMarkProps: {
-            content: initialState?.currentUser?.name,
         },
         footerRender: () => <Footer/>,
         onPageChange: () => {
@@ -90,39 +84,9 @@ export const layout: RunTimeLayoutConfig = ({initialState, setInitialState}) => 
                 width: '331px',
             },
         ],
-        links: isDev
-            ? [
-                <Link key="openapi" to="/umi/plugin/openapi" target="_blank">
-                    <LinkOutlined/>
-                    <span>OpenAPI 文档</span>
-                </Link>,
-            ]
-            : [],
         menuHeaderRender: undefined,
         // 自定义 403 页面
         // unAccessible: <div>unAccessible</div>,
-        // 增加一个 loading 的状态
-        childrenRender: (children) => {
-            // if (initialState?.loading) return <PageLoading />;
-            return (
-                <>
-                    {children}
-                    {isDev && (
-                        <SettingDrawer
-                            disableUrlParams
-                            enableDarkTheme
-                            settings={initialState?.settings}
-                            onSettingChange={(settings) => {
-                                setInitialState((preInitialState) => ({
-                                    ...preInitialState,
-                                    settings,
-                                }));
-                            }}
-                        />
-                    )}
-                </>
-            );
-        },
         ...initialState?.settings,
     };
 };
