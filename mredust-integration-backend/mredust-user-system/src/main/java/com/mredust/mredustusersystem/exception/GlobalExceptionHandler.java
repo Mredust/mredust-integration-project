@@ -26,7 +26,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(RuntimeException.class)
     public BaseResponse runtimeException(RuntimeException ex) {
         log.error("RuntimeException：", ex);
-        return Result.fail(ResponseCode.FAIL, "服务器繁忙，请稍后重试...");
+        return Result.fail(ResponseCode.SYSTEM_ERROR, "服务器繁忙，请稍后重试...");
     }
     
     
