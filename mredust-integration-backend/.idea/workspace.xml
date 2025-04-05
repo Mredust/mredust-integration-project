@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00df0193-b29e-400a-8628-26bb1ac00326" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/config/defaultSettings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/config/defaultSettings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mredust-user-system/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/main/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mredust-user-system/src/test/java/com/mredust/mredustusersystem/RedisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/docker/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/MredustUserSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/java/com/mredust/mredustusersystem/MredustUserSystemApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mredust-user-system/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mredust-user-system/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/config/proxy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/config/proxy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/requestConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-ant/src/requestConfig.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Dockerfile" />
         <option value="Class" />
       </list>
     </option>
@@ -34,9 +44,12 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2v4fyJobWg0UzkqjS4FMZrgEdQP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,7 +68,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "F:/mredust-integration-project/mredust-integration-backend/mredust-user-system/src/test/java",
+    "last_opened_file_path": "F:/mredust-integration-project/mredust-integration-backend/mredust-user-system",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,6 +87,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\mredust-integration-project\mredust-integration-backend\mredust-user-system\src\main\resources" />
       <recent name="F:\mredust-integration-project\mredust-integration-backend\mredust-user-system\src\test\java" />
       <recent name="F:\mredust-integration-project\mredust-integration-backend\mredust-user-system\src\main\java\com\mredust\mredustusersystem\common" />
     </key>
@@ -93,10 +107,11 @@
     <option name="configurationTypes">
       <set>
         <option value="SpringBootApplicationConfigurationType" />
+        <option value="docker-deploy" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MredustUserSystemApplication">
+  <component name="RunManager" selected="Docker.user-center-backend">
     <configuration name="UserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mredust.mredustusersystem.UserTest" />
       <module name="mredust-user-system" />
@@ -106,6 +121,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mredust-user-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mredust.mredustusersystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mredust.mredustusersystem" />
+      <option name="MAIN_CLASS_NAME" value="com.mredust.mredustusersystem.RedisTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,8 +177,31 @@
     <configuration name="MredustUserSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="mredust-user-system" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mredust.mredustusersystem.MredustUserSystemApplication" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=test" />
       <method v="2">
         <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="user-center-backend" type="docker-deploy" factoryName="dockerfile" server-name="test2">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="user-center-backend:1.0.0" />
+          <option name="containerName" value="user-center-backend" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="4091" />
+                <option name="hostPort" value="4091" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network user-center-network" />
+          <option name="showCommandPreview" value="true" />
+          <option name="sourceFilePath" value="mredust-user-system/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="F:\mredust-integration-project\mredust-integration-backend\mredust-user-system/pom.xml" goal="clean package -U -DskipTests " />
       </method>
     </configuration>
     <configuration default="true" type="lua.app" factoryName="Lua Application">
@@ -160,8 +214,18 @@
       <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.user-center-backend" />
+      <item itemvalue="JUnit.RedisTest.test" />
+      <item itemvalue="JUnit.UserTest.testUserLogin" />
+      <item itemvalue="JUnit.UserTest.testUserRegister" />
+      <item itemvalue="Spring Boot.MredustIntegrationParentApplication" />
+      <item itemvalue="Spring Boot.MredustUserSystemApplication" />
+      <item itemvalue="应用程序.UserTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisTest.test" />
         <item itemvalue="JUnit.UserTest.testUserRegister" />
         <item itemvalue="应用程序.UserTest" />
         <item itemvalue="JUnit.UserTest.testUserLogin" />
@@ -176,7 +240,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743409520142</updated>
-      <workItem from="1743409521196" duration="30478000" />
+      <workItem from="1743409521196" duration="32308000" />
+      <workItem from="1743684499368" duration="21185000" />
     </task>
     <servers />
   </component>

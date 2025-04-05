@@ -6,26 +6,6 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-  redis:
-    database: 0
-    host: localhost
-    port: 6379
-    timeout: 5000
-    password: motianze4
-    lettuce:
-      pool:
-        max-active: 200
-        max-wait: -1ms
-        max-idle: 10
-        min-idle: 0
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mredust-integration-project?useSSL=false&serverTimezone=UTC
-    username: root
-    password: motianze4
-
-server:
-  port: 4090
 
 mybatis-plus:
   type-aliases-package: com.mredust.mredustuserservice.entity
