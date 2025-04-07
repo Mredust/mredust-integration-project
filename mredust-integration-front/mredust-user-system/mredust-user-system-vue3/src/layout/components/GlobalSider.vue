@@ -1,19 +1,14 @@
 <template>
-  <a-layout-sider
-    breakpoint="lg"
-    collapsed-width="0"
-    @collapse="onCollapse"
-    @breakpoint="onBreakpoint"
-  >
-    <div class="title">用户管理中心</div>
-    <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
-      <a-menu-item key="home">
-        <home-outlined />
-        <span class="nav-text">首页</span>
-      </a-menu-item>
-      <a-menu-item key="user-manage">
-        <user-outlined />
-        <span class="nav-text">用户管理</span>
+  <a-layout-sider breakpoint="lg" collapsed-width="0">
+    <div class="title">{{ Settings.title }}</div>
+    <a-menu :selectedKeys="selectedKeys" theme="dark" mode="inline">
+      <a-menu-item
+        :key="item.key"
+        v-for="item in menuItems"
+        @Click="toView(item)"
+      >
+        <component :is="item.icon" />
+        <span class="nav-text">{{ item.label }}</span>
       </a-menu-item>
     </a-menu>
   </a-layout-sider>
@@ -22,16 +17,29 @@
 <script setup lang="ts">
 import { HomeOutlined, UserOutlined } from "@ant-design/icons-vue";
 import { ref } from "vue";
+import Settings from "../../config/defaultSettings";
+import { useRouter } from "vue-router";
 
-const onCollapse = (collapsed: boolean, type: string) => {
-  console.log(collapsed, type);
+const menuItems = [
+  {
+    key: "home",
+    icon: HomeOutlined,
+    label: "首页",
+    path: "/home",
+  },
+  {
+    key: "user-manage",
+    icon: UserOutlined,
+    label: "用户管理",
+    path: "/admin/user-manage",
+  },
+];
+const selectedKeys = ref<string[]>([menuItems[0].key]);
+const router = useRouter();
+const toView = (item: any) => {
+  selectedKeys.value = [item.key];
+  router.push({ path: item.path });
 };
-
-const onBreakpoint = (broken: boolean) => {
-  console.log(broken);
-};
-
-const selectedKeys = ref<string[]>(["home"]);
 </script>
 <style scoped>
 .title {

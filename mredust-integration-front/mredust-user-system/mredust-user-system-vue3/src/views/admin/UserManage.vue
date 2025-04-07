@@ -1,10 +1,10 @@
 <template>
-  <div id="home">这是首页</div>
+  <div id="user-manage">用户管理页面</div>
 </template>
 
 <script setup lang="ts"></script>
 <style scoped>
-#home {
+#user-manage {
   height: 100%;
   display: flex;
   justify-content: center;

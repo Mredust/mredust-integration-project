@@ -4,7 +4,7 @@
       <router-view />
     </template>
     <template v-else>
-      <BasicLayout />
+      <router-view />
     </template>
   </div>
 </template>
