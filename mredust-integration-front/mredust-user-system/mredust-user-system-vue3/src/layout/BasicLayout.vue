@@ -1,6 +1,6 @@
 <template>
   <a-layout>
-    <GlobalSider />
+    <GlobalSider style="height: 100vh" />
     <a-layout>
       <GlobalHeader />
       <a-layout-content :style="{ margin: '24px 16px 0' }">
@@ -11,14 +11,11 @@
         </div>
       </a-layout-content>
       <a-layout-footer style="text-align: center">
-        <a
-          href="https://github.com/Mredust"
-          target="_blank"
-          style="color: black"
-        >
+        <a :href="Settings.GithubAddr" target="_blank" style="color: black">
           <GithubOutlined />
+          Mredust
         </a>
-        ©2025 Created by Mredust
+        {{ Settings.Copyright }}
       </a-layout-footer>
     </a-layout>
   </a-layout>
@@ -27,6 +24,7 @@
 import GlobalSider from "@/layout/components/GlobalSider.vue";
 import GlobalHeader from "@/layout/components/GlobalHeader.vue";
 import { GithubOutlined } from "@ant-design/icons-vue";
+import Settings from "@/config/defaultSettings";
 </script>
 <style scoped>
 #components-layout-demo-responsive .logo {

@@ -6,3 +6,14 @@ export async function userLoginAPI(body: { [key: string]: string }) {
     data: body,
   });
 }
+
+export async function userLogoutAPI(
+  params?: { [key: string]: any },
+  options?: { [key: string]: any }
+) {
+  return request("/user/logout", {
+    method: "POST",
+    params: { ...params },
+    ...(options || {}),
+  });
+}

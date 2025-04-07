@@ -7,19 +7,11 @@
   >
     <div class="title">用户管理中心</div>
     <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
-      <a-menu-item key="1">
+      <a-menu-item key="home">
         <home-outlined />
         <span class="nav-text">首页</span>
       </a-menu-item>
-      <a-menu-item key="2">
-        <video-camera-outlined />
-        <span class="nav-text">nav 2</span>
-      </a-menu-item>
-      <a-menu-item key="3">
-        <upload-outlined />
-        <span class="nav-text">nav 3</span>
-      </a-menu-item>
-      <a-menu-item key="4">
+      <a-menu-item key="user-manage">
         <user-outlined />
         <span class="nav-text">用户管理</span>
       </a-menu-item>
@@ -28,12 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import {
-  HomeOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons-vue";
+import { HomeOutlined, UserOutlined } from "@ant-design/icons-vue";
 import { ref } from "vue";
 
 const onCollapse = (collapsed: boolean, type: string) => {
@@ -44,7 +31,7 @@ const onBreakpoint = (broken: boolean) => {
   console.log(broken);
 };
 
-const selectedKeys = ref<string[]>(["4"]);
+const selectedKeys = ref<string[]>(["home"]);
 </script>
 <style scoped>
 .title {

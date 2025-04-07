@@ -15,11 +15,8 @@
           >
           <template #overlay>
             <a-menu style="margin-top: 10px">
-              <a-menu-item>
-                <a href="javascript:;">个人信息</a>
-              </a-menu-item>
-              <a-menu-item>
-                <a href="javascript:;">退出登录</a>
+              <a-menu-item v-for="item in menuList" :key="item.key">
+                <a @click="to(item)">{{ item.label }}</a>
               </a-menu-item>
             </a-menu>
           </template>
@@ -31,6 +28,34 @@
 
 <script setup lang="ts">
 import { UserOutlined } from "@ant-design/icons-vue";
+import { message } from "ant-design-vue";
+import { userLogoutAPI } from "@/services/user/api";
+import { useRouter } from "vue-router";
+
+const menuList = [
+  {
+    key: "info",
+    label: "个人信息",
+    path: "/user/info",
+  },
+  {
+    key: "logout",
+    label: "退出登录",
+    path: "/user/login",
+  },
+];
+const router = useRouter();
+const to = async (item: any) => {
+  if (item.key === "logout") {
+    let userInfo = JSON.parse(localStorage.getItem("userInfo") || "{}");
+    await userLogoutAPI({ userId: userInfo.userId });
+    await router.push({
+      path: "/user/login",
+    });
+  } else {
+    message.warning("功能尚未开发");
+  }
+};
 </script>
 <style scoped>
 .user {
