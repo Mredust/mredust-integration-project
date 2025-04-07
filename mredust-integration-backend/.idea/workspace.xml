@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00df0193-b29e-400a-8628-26bb1ac00326" name="更改" comment="" />
+    <list default="true" id="00df0193-b29e-400a-8628-26bb1ac00326" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/config/defaultSettings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/views/User/UserLogin.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/views/User/UserRegister.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/router/index.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -229,7 +237,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743409520142</updated>
       <workItem from="1743409521196" duration="32308000" />
-      <workItem from="1743684499368" duration="21865000" />
+      <workItem from="1743684499368" duration="23038000" />
     </task>
     <servers />
   </component>

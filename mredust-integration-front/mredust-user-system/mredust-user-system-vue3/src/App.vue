@@ -1,5 +1,12 @@
 <template>
-  <BasicLayout id="app" />
+  <div id="app">
+    <template v-if="route.path.includes('/user')">
+      <router-view />
+    </template>
+    <template v-else>
+      <BasicLayout />
+    </template>
+  </div>
 </template>
 
 <style>
@@ -26,5 +33,8 @@ nav a.router-link-exact-active {
 }
 </style>
 <script setup lang="ts">
+import { useRoute } from "vue-router";
 import BasicLayout from "@/layout/BasicLayout.vue";
+
+const route = useRoute();
 </script>
