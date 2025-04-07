@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00df0193-b29e-400a-8628-26bb1ac00326" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/config/defaultSettings.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/views/User/UserLogin.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/views/User/UserRegister.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/.env.dev" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/.env.prod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/config/request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/services/user/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/views/User/UserLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/views/User/UserLogin.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +107,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.user-center-backend">
+  <component name="RunManager" selected="Spring Boot.MredustUserSystemApplication">
     <configuration name="UserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mredust.mredustusersystem.UserTest" />
       <module name="mredust-user-system" />
@@ -173,7 +173,6 @@
     <configuration name="MredustUserSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="mredust-user-system" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mredust.mredustusersystem.MredustUserSystemApplication" />
-      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -237,7 +236,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743409520142</updated>
       <workItem from="1743409521196" duration="32308000" />
-      <workItem from="1743684499368" duration="23038000" />
+      <workItem from="1743684499368" duration="24018000" />
     </task>
     <servers />
   </component>

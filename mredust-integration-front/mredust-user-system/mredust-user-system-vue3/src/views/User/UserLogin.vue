@@ -64,6 +64,8 @@ import {
 import Settings from "@/config/defaultSettings";
 import { reactive } from "vue";
 import router from "@/router";
+import { userLoginAPI } from "@/services/user/api";
+import { message } from "ant-design-vue";
 
 interface FormState {
   account: string;
@@ -74,8 +76,20 @@ const loginForm = reactive<FormState>({
   account: "",
   password: "",
 });
-const onFinish = (values: any) => {
-  console.log("Success:", values);
+const onFinish = async (values: FormState) => {
+  try {
+    const res: any = await userLoginAPI({ ...values });
+    console.log(res);
+    if (res.code === 200) {
+      message.success("登录成功");
+      localStorage.setItem("userInfo", JSON.stringify(res.data));
+      await router.push("/");
+    } else {
+      message.error(res.msg || "登录失败");
+    }
+  } catch (err) {
+    console.log(err);
+  }
 };
 const toRegister = () => {
   router.push({ path: "/user/register" });

@@ -37,4 +37,5 @@ import { useRoute } from "vue-router";
 import BasicLayout from "@/layout/BasicLayout.vue";
 
 const route = useRoute();
+console.log(process.env);
 </script>
