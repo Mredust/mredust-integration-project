@@ -38,7 +38,7 @@ const selectedKeys = ref<string[]>([menuItems[0].key]);
 const router = useRouter();
 const toView = (item: any) => {
   selectedKeys.value = [item.key];
-  router.push({ path: item.path });
+  router.push(item.path);
 };
 </script>
 <style scoped>

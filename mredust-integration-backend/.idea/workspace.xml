@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00df0193-b29e-400a-8628-26bb1ac00326" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/services/user/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/services/user/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mredust-integration-parent/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mredust-integration-parent/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mredust-integration-parent/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/layout/components/GlobalSider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../mredust-integration-front/mredust-user-system/mredust-user-system-vue3/src/layout/components/GlobalSider.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +233,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743409520142</updated>
       <workItem from="1743409521196" duration="32308000" />
-      <workItem from="1743684499368" duration="24264000" />
+      <workItem from="1743684499368" duration="25064000" />
     </task>
     <servers />
   </component>
